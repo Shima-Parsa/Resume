@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #c7dfc8, #c2e1e1); /* Gradient background */
+    color: #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease;
+}
+
+header p a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+header:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Add soft shadow on hover */
+}
+
+/* Section Styles */
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+/* All text color change on hover */
+ h2, h3, p, li, a {
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+h2:hover, h3:hover{
+    color: #033031; /* Color change on hover */
+}
+
+ p:hover, li:hover, a:hover {
+    color: #085153; /* Color change on hover */
+    transform: scale(1.02); /* Slight scale effect */
+}
+
+/* Links */
+a {
+    color: #0f8286;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #103a57;
+    text-decoration: underline;
+    transform: scale(1.02); /* Subtle scaling on link hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
